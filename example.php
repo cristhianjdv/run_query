@@ -86,7 +86,7 @@ if(count($rw)>=1){
 	}
 	
 	/* si no me interesa el foreach puedo ir a la fila y columna deseada  */
-	echo $peso[2]['text'];
+	echo $rw[2]['text'];
 }
 
 
