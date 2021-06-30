@@ -72,5 +72,23 @@ Array
 )
 */
 
+/*=============== TRABAJANDO CON EL ARRAY =====================*/
+
+$rw  = run_query($sql,3,0);
+
+/*si deseo puede consultar si hay registros*/
+if(count($rw)>=1){
+	/*puedo utilizar un foreach para recorrer los registros*/
+	foreach($rw as $id => $datos){
+		echo $datos['id'];
+		echo $datos['text'];
+		echo $datos['option'];
+	}
+	
+	/* si no me interesa el foreach puedo ir a la fila y columna deseada  */
+	echo $peso[2]['text'];
+}
+
+
 
 ?>
